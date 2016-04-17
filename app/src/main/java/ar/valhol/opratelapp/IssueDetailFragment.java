@@ -5,13 +5,11 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.text.format.DateFormat;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import ar.valhol.opratelapp.model.Issue;
-import org.w3c.dom.Text;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -77,6 +75,5 @@ public class IssueDetailFragment extends Fragment{
             description.setText(Html.fromHtml("<b>Description: </b>" + mIssue.getDescription()));
         month.setText(monthString.toUpperCase());
         day.setText(dayString);
-
     }
 }

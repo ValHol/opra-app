@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar mToolbar;
     ArrayList<Issue> mIssues;
+    RedMineService mRedMineService;
+
+    /**
+     * Lifecycle
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +45,41 @@ public class MainActivity extends AppCompatActivity {
         setRetrofit();
     }
 
+    @Override
+    protected void onStop() {
+        EventBus.getDefault().unregister(this);
+        super.onStop();
+    }
+
+    @Override
+    public void setTitle(CharSequence title) {
+        if (mToolbar == null) return;
+        TextView titleTextView = (TextView) mToolbar.findViewById(R.id.title);
+        titleTextView.setText(title);
+    }
+
+    /**
+     * Events listeners
+     */
+
+    @Subscribe
+    public void onShowIssueDetailEvent(ShowIssueDetailEvent showIssueDetailEvent) {
+        showIssueDetail(showIssueDetailEvent.issueId);
+    }
+
+    /**
+     * Setup methods
+     */
+
     private void setRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://demo.redmine.org/")
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
 
-        RedMineService redMineService = retrofit.create(RedMineService.class);
+        mRedMineService = retrofit.create(RedMineService.class);
 
-        redMineService.getIssues().enqueue(new Callback<Response>() {
+        mRedMineService.getIssues().enqueue(new Callback<Response>() {
             @Override
             public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
                 mIssues = response.body().getIssues();
@@ -62,29 +93,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onStop() {
-        EventBus.getDefault().unregister(this);
-        super.onStop();
-    }
-
-    @Subscribe
-    public void onShowIssueDetailEvent(ShowIssueDetailEvent showIssueDetailEvent) {
-        showIssueDetail(showIssueDetailEvent.issueId);
-    }
-
-    @Override
-    public void setTitle(CharSequence title) {
-        if (mToolbar == null) return;
-        TextView titleTextView = (TextView) mToolbar.findViewById(R.id.title);
-        titleTextView.setText(title);
-    }
-
     private void setToolbar() {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mToolbar.setTitle("");
         setSupportActionBar(mToolbar);
     }
+
+    /**
+     * Fragments methods
+     */
 
     private void showIssueList() {
         showFragment(IssueListFragment.newInstance());
