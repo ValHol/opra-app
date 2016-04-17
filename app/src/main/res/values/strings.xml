@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">REDMINE MINI</string>
+    <string name="list_header">ISSUES</string>
+    <string name="detail_header">DETAILS</string>
+</resources>

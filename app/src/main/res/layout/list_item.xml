@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="120dp"
+                    android:paddingLeft="@dimen/default_padding"
+                    android:paddingStart="@dimen/default_padding"
+                    tools:context=".MainActivity">
+
+        <View
+                android:id="@+id/vertical_line"
+                android:layout_width="11dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/date"
+                android:layout_toEndOf="@+id/date"
+                android:layout_marginLeft="-42dp"
+                android:background="@color/background_grey"/>
+
+        <RelativeLayout
+                android:paddingTop="4dp"
+                android:id="@+id/date"
+                android:layout_width="@dimen/date_diam"
+                android:layout_height="@dimen/date_diam"
+                android:background="@drawable/date_frame"
+                android:layout_marginTop="16dp">
+
+            <ar.valhol.opratelapp.components.LightTextView
+                    android:id="@+id/month"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="JUN"/>
+
+            <ar.valhol.opratelapp.components.BoldTextView
+                    android:id="@+id/day"
+                    android:layout_below="@id/month"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="top"
+                    android:layout_marginTop="-8dp"
+                    android:textSize="28dp"
+                    android:text="27"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/content"
+                android:layout_toRightOf="@+id/vertical_line"
+                android:layout_toEndOf="@+id/vertical_line"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/date">
+
+            <ar.valhol.opratelapp.components.LightTextView
+                    android:id="@+id/text_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="36dp"
+                    android:textSize="@dimen/default_textsize"
+                    android:paddingRight="@dimen/default_padding"/>
+
+            <ar.valhol.opratelapp.components.LightTextView
+                    android:id="@+id/text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="72dp"
+                    android:paddingLeft="36dp"
+                    android:textSize="@dimen/default_textsize"
+                    android:paddingRight="@dimen/default_padding"/>
+
+            <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/default_padding"
+                    android:background="@color/background_grey"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
