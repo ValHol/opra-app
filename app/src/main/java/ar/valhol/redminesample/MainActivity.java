@@ -49,9 +49,11 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Issue> mIssues;
     RedMineService mRedMineService;
 
+
     /**
-     * Background flag
+     * Application is in background
      */
+
     private boolean inBackground;
 
     /**
@@ -159,7 +161,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showFragment(Fragment fragment) {
+
         if (inBackground) return;
+
         try {
             FragmentTransaction ft = getSupportFragmentManager()
                     .beginTransaction()
