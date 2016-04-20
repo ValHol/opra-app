@@ -1,6 +1,4 @@
-package ar.valhol.opratelapp.events;
-
-import ar.valhol.opratelapp.model.Issue;
+package ar.valhol.redminesample.events;
 
 /**
  * Created by Valentín on 16-Apr-16.

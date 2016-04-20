@@ -1,4 +1,4 @@
-package ar.valhol.opratelapp;
+package ar.valhol.redminesample;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,9 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import ar.valhol.opratelapp.events.IssuesReceivedEvent;
-import ar.valhol.opratelapp.events.ShowIssueDetailEvent;
-import ar.valhol.opratelapp.model.Issue;
+import ar.valhol.redminesample.events.IssuesReceivedEvent;
+import ar.valhol.redminesample.events.ShowIssueDetailEvent;
+import ar.valhol.redminesample.model.Issue;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 

@@ -1,4 +1,4 @@
-package ar.valhol.opratelapp.components;
+package ar.valhol.redminesample.components;
 
 import android.content.Context;
 import android.graphics.Typeface;
