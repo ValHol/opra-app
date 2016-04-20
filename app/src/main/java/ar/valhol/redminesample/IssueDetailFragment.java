@@ -62,7 +62,7 @@ public class IssueDetailFragment extends Fragment{
         String monthString = "";
         String dayString = "";
         try {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd", Locale.US);
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
             Date date = sdf.parse(mIssue.getStart_date());
             monthString = (String) DateFormat.format("MMM", date);
             dayString = (String) DateFormat.format("dd", date);
