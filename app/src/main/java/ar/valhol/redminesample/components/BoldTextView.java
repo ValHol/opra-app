@@ -1,12 +1,9 @@
-package ar.valhol.opratelapp.components;
+package ar.valhol.redminesample.components;
 
 import android.content.Context;
-import android.graphics.Canvas;
 import android.graphics.Typeface;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import ar.valhol.opratelapp.R;
 
 public class BoldTextView extends TextView {
 

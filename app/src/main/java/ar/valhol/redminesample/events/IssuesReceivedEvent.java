@@ -1,6 +1,6 @@
-package ar.valhol.opratelapp.events;
+package ar.valhol.redminesample.events;
 
-import ar.valhol.opratelapp.model.Issue;
+import ar.valhol.redminesample.model.Issue;
 
 import java.util.ArrayList;
 

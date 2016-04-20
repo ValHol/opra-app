@@ -1,8 +1,7 @@
-package ar.valhol.opratelapp.model;
+package ar.valhol.redminesample.model;
 
-/**
- * Created by Valentín on 16-Apr-16.
- */
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+
 public class GenericObject {
     long id;
     String name;
@@ -30,4 +29,5 @@ public class GenericObject {
     public void setName(String name) {
         this.name = name;
     }
+
 }

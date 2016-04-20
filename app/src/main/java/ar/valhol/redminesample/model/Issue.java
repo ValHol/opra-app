@@ -1,4 +1,6 @@
-package ar.valhol.opratelapp.model;
+package ar.valhol.redminesample.model;
+
+import com.fasterxml.jackson.annotation.JsonAnySetter;
 
 /**
  * Created by Valentín on 16-Apr-16.

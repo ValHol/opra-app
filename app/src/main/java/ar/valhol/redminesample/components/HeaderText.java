@@ -1,10 +1,10 @@
-package ar.valhol.opratelapp.components;
+package ar.valhol.redminesample.components;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import ar.valhol.opratelapp.R;
+import ar.valhol.redminesample.R;
 
 /**
  * Created by Valentín on 15-Apr-16.

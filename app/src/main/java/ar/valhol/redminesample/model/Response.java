@@ -1,7 +1,8 @@
-package ar.valhol.opratelapp.model;
+package ar.valhol.redminesample.model;
+
+import com.fasterxml.jackson.annotation.JsonAnySetter;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Response {
     ArrayList<Issue> issues;
@@ -51,4 +52,5 @@ public class Response {
     public void setLimit(int limit) {
         this.limit = limit;
     }
+
 }

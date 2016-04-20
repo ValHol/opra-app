@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="ar.valhol.opratelapp.MainActivity">
+        tools:context="ar.valhol.redminesample.MainActivity">
 
     <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -13,7 +13,7 @@
             android:background="@color/teal"
             android:elevation="4dp">
 
-        <ar.valhol.opratelapp.components.BoldTextView
+        <ar.valhol.redminesample.components.BoldTextView
                 android:id="@+id/title"
                 android:textSize="28dp"
                 android:textColor="@color/white"
@@ -31,7 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-        <ar.valhol.opratelapp.components.LightTextView
+        <ar.valhol.redminesample.components.LightTextView
+                android:id="@+id/text_loading"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"

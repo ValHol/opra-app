@@ -31,7 +31,7 @@
                 android:background="@drawable/date_frame"
                 android:layout_marginTop="16dp">
 
-            <ar.valhol.opratelapp.components.LightTextView
+            <ar.valhol.redminesample.components.LightTextView
                     android:id="@+id/month"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="JUN"/>
 
-            <ar.valhol.opratelapp.components.BoldTextView
+            <ar.valhol.redminesample.components.BoldTextView
                     android:id="@+id/day"
                     android:layout_below="@id/month"
                     android:textColor="@color/white"
@@ -62,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignTop="@id/date">
 
-            <ar.valhol.opratelapp.components.LightTextView
+            <ar.valhol.redminesample.components.LightTextView
                     android:id="@+id/text_subject"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                     android:textSize="@dimen/default_textsize"
                     android:paddingRight="@dimen/default_padding"/>
 
-            <ar.valhol.opratelapp.components.LightTextView
+            <ar.valhol.redminesample.components.LightTextView
                     android:id="@+id/text_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

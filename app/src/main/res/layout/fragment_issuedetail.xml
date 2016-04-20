@@ -13,7 +13,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            <ar.valhol.opratelapp.components.LightTextView
+            <ar.valhol.redminesample.components.LightTextView
                     android:id="@+id/header"
                     android:text="@string/list_header"
                     android:gravity="center"
@@ -22,7 +22,7 @@
                     android:textColor="@color/white"
                     android:layout_height="36dp"/>
 
-            <ar.valhol.opratelapp.components.BoldTextView
+            <ar.valhol.redminesample.components.BoldTextView
                     android:id="@+id/text_authorname"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -55,7 +55,7 @@
                     android:background="@drawable/date_frame"
                     android:layout_marginTop="16dp">
 
-                <ar.valhol.opratelapp.components.LightTextView
+                <ar.valhol.redminesample.components.LightTextView
                         android:id="@+id/month"
                         android:textColor="@color/white"
                         android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
                         android:layout_centerHorizontal="true"
                         android:text="JUN"/>
 
-                <ar.valhol.opratelapp.components.BoldTextView
+                <ar.valhol.redminesample.components.BoldTextView
                         android:id="@+id/day"
                         android:layout_below="@id/month"
                         android:textColor="@color/white"
@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@id/date">
 
-                <ar.valhol.opratelapp.components.LightTextView
+                <ar.valhol.redminesample.components.LightTextView
                         android:id="@+id/text_subject"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                         android:paddingRight="@dimen/default_padding"
                         android:text="Subject: Cum explicabo fuga ipsum, iusto numquam sunt veniam. Eius excepturi ipsa repellendus. Deleniti nisi porr oquibusdam saepe temporibus! Ea, maiores, quis! Animi aut dolore error iusto, pariatur sit ullam! Obcaecati."/>
 
-                <ar.valhol.opratelapp.components.LightTextView
+                <ar.valhol.redminesample.components.LightTextView
                         android:id="@+id/text_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
                         android:paddingEnd="@dimen/default_padding"
                         android:text="Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam aliquid aut consectetur cupiditate debitis dolore eius inventore iusto labore magnam maiores maxime nihil quas quo, tempore voluptate voluptates? Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam aliquid aut consectetur cupiditate debitis dolore eius inventore iusto labore magnam maiores maxime nihil quas quo, tempore voluptate voluptates?"/>
 
-                <ar.valhol.opratelapp.components.LightTextView
+                <ar.valhol.redminesample.components.LightTextView
                         android:id="@+id/text_priority"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
@@ -136,12 +136,12 @@
                         android:orientation="vertical"
                         android:gravity="center">
 
-                    <ar.valhol.opratelapp.components.BoldTextView
+                    <ar.valhol.redminesample.components.BoldTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Estimated Hours"/>
 
-                    <ar.valhol.opratelapp.components.BoldTextView
+                    <ar.valhol.redminesample.components.BoldTextView
                             android:id="@+id/text_estimated"
                             android:background="@drawable/hours_background"
                             android:layout_width="@dimen/hours_diam"
@@ -162,13 +162,13 @@
                         android:orientation="vertical"
                         android:gravity="center">
 
-                    <ar.valhol.opratelapp.components.BoldTextView
+                    <ar.valhol.redminesample.components.BoldTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Spent Hours"/>
 
 
-                    <ar.valhol.opratelapp.components.BoldTextView
+                    <ar.valhol.redminesample.components.BoldTextView
                             android:id="@+id/text_spent"
                             android:background="@drawable/spent_background"
                             android:layout_width="@dimen/hours_diam"

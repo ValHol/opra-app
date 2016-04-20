@@ -1,7 +1,7 @@
-package ar.valhol.opratelapp.service;
+package ar.valhol.redminesample.service;
 
-import ar.valhol.opratelapp.model.Issue;
-import ar.valhol.opratelapp.model.Response;
+import ar.valhol.redminesample.model.Issue;
+import ar.valhol.redminesample.model.Response;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
